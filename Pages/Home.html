@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--=============== REMIXICONS ===============-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="../style/Navbar.css" />
+
+    <title>Responsive dropdown menu - Bedimcode</title>
+  </head>
+  <body>
+    <!--=============== HEADER ===============-->
+    <header class="header">
+      <nav class="nav container">
+        <div class="nav__data">
+          <a href="#" class="nav__logo">
+            <i class="ri-planet-line"></i> Company
+          </a>
+
+          <div class="nav__toggle" id="nav-toggle">
+            <i class="ri-menu-line nav__burger"></i>
+            <i class="ri-close-line nav__close"></i>
+          </div>
+        </div>
+
+        <!--=============== NAV MENU ===============-->
+        <div class="nav__menu" id="nav-menu">
+          <ul class="nav__list">
+            <li><a href="#" class="nav__link">Home</a></li>
+
+            <li><a href="#" class="nav__link">Features</a></li>
+
+            <li><a href="#" class="nav__link">Pricing</a></li>
+
+            <!--=============== DROPDOWN 1 ===============-->
+            <li class="dropdown__item">
+              <div class="nav__link">
+                Partners <i class="ri-arrow-down-s-line dropdown__arrow"></i>
+              </div>
+
+              <ul class="dropdown__menu">
+                <li>
+                  <a href="#" class="dropdown__link">
+                    <i class="ri-pie-chart-line"></i> Become a Channel Partner
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="dropdown__link">
+                    <i class="ri-pie-chart-line"></i> Become a Channel Partner
+                  </a>
+                </li>
+              </ul>
+            </li>
+
+            <li><a href="#" class="nav__link">Blogs</a></li>
+            <li><a href="#" class="nav__link">Contact</a></li>
+          </ul>
+        </div>
+
+        <button class="glow-on-hover" type="button">Account Login</button>
+      </nav>
+    </header>
+
+    <main class="main_content">
+      <!-- 
+<b> - Bold text
+<strong> - Important text
+<i> - Italic text
+<em> - Emphasized text
+<mark> - Marked text
+<small> - Smaller text
+<del> - Deleted text
+<ins> - Inserted text
+<sub> - Subscript text
+<sup> - Superscript text
+          -->
+      <h1>This is my website</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, dolor
+        culpa. Facilis maxime molestiae nesciunt incidunt ut atque, eum, velit
+        consequatur sequi impedit dolor tempore eveniet, nobis repellendus
+        itaque tenetur?
+      </p>
+      <b>Maaz</b>
+      <strong>Maaz</strong>
+      <i>Maaz</i>
+      <em>Maaz</em> <br />
+      tHIS IS <mark>Maaz</mark> <br />
+      This is<small>Maaz</small> Khan H<sub>2</sub>O n<sup>2</sup>
+    </main>
+
+    <!--=============== MAIN JS ===============-->
+    <script src="../js/main.js"></script>
+  </body>
+</html>
