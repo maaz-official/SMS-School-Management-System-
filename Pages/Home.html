@@ -3,100 +3,219 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <!--=============== REMIXICONS ===============-->
     <link
       href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css"
       rel="stylesheet"
     />
-
-    <!--=============== CSS ===============-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
     <link rel="stylesheet" href="../style/Navbar.css" />
-
-    <title>Responsive dropdown menu - Bedimcode</title>
+    <link rel="stylesheet" href="../style/Home.css" />
+    <title>Responsive Carousel</title>
   </head>
   <body>
-    <!--=============== HEADER ===============-->
     <header class="header">
       <nav class="nav container">
         <div class="nav__data">
           <a href="#" class="nav__logo">
             <i class="ri-planet-line"></i> Company
           </a>
-
           <div class="nav__toggle" id="nav-toggle">
             <i class="ri-menu-line nav__burger"></i>
             <i class="ri-close-line nav__close"></i>
           </div>
         </div>
-
-        <!--=============== NAV MENU ===============-->
         <div class="nav__menu" id="nav-menu">
           <ul class="nav__list">
             <li><a href="#" class="nav__link">Home</a></li>
-
             <li><a href="#" class="nav__link">Features</a></li>
-
             <li><a href="#" class="nav__link">Pricing</a></li>
-
-            <!--=============== DROPDOWN 1 ===============-->
             <li class="dropdown__item">
               <div class="nav__link">
                 Partners <i class="ri-arrow-down-s-line dropdown__arrow"></i>
               </div>
-
               <ul class="dropdown__menu">
                 <li>
-                  <a href="#" class="dropdown__link">
-                    <i class="ri-pie-chart-line"></i> Become a Channel Partner
-                  </a>
+                  <a href="#" class="dropdown__link"
+                    ><i class="ri-pie-chart-line"></i> Become a Channel
+                    Partner</a
+                  >
                 </li>
                 <li>
-                  <a href="#" class="dropdown__link">
-                    <i class="ri-pie-chart-line"></i> Become a Channel Partner
-                  </a>
+                  <a href="#" class="dropdown__link"
+                    ><i class="ri-pie-chart-line"></i> Become a Channel
+                    Partner</a
+                  >
                 </li>
               </ul>
             </li>
-
             <li><a href="#" class="nav__link">Blogs</a></li>
             <li><a href="#" class="nav__link">Contact</a></li>
+            <button class="glow-on-hover" type="button">Account Login</button>
           </ul>
         </div>
-
-        <button class="glow-on-hover" type="button">Account Login</button>
       </nav>
     </header>
 
     <main class="main_content">
-      <!-- 
-<b> - Bold text
-<strong> - Important text
-<i> - Italic text
-<em> - Emphasized text
-<mark> - Marked text
-<small> - Smaller text
-<del> - Deleted text
-<ins> - Inserted text
-<sub> - Subscript text
-<sup> - Superscript text
-          -->
-      <h1>This is my website</h1>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, dolor
-        culpa. Facilis maxime molestiae nesciunt incidunt ut atque, eum, velit
-        consequatur sequi impedit dolor tempore eveniet, nobis repellendus
-        itaque tenetur?
-      </p>
-      <b>Maaz</b>
-      <strong>Maaz</strong>
-      <i>Maaz</i>
-      <em>Maaz</em> <br />
-      tHIS IS <mark>Maaz</mark> <br />
-      This is<small>Maaz</small> Khan H<sub>2</sub>O n<sup>2</sup>
+      <section class="carousel-wrapper">
+        <div class="slide" data-slide>
+          <img
+            src="https://skoolzoom.com/assets/theme/skoolzoom/images/banner/banner2.jpg"
+            alt="Image 1"
+          />
+        </div>
+        <div class="slide" data-slide>
+          <img
+            src="https://skoolzoom.com/assets/theme/skoolzoom/images/banner/banner2.jpg"
+            alt="Image 2"
+          />
+        </div>
+        <button class="btn previous" data-button="previous">
+          <i class="ri-arrow-left-s-line"></i>
+        </button>
+        <button class="btn next" data-button="next">
+          <i class="ri-arrow-right-s-line"></i>
+        </button>
+      </section>
+
+      <section class="what-we-do position-relative">
+        <div class="container">
+          <figure class="element1 mb-0">
+            <img
+              src="https://skoolzoom.com/assets/theme/skoolzoom/images/what-we-do-icon-1.png"
+              class="img-fluid"
+              alt=""
+            />
+          </figure>
+          <div class="row">
+            <div class="col-12">
+              <div class="subheading" data-aos="fade-right">
+                <h6>What we do</h6>
+                <h2>
+                  Redefining Education with Cloud-Based Learning &amp;
+                  Management Solutions
+                </h2>
+              </div>
+            </div>
+          </div>
+          <div class="services">
+            <div class="service service_1">
+              <figure class="img">
+                <img
+                  src="https://skoolzoom.com/assets/theme/skoolzoom/images/what-we-do-credit-debit-icon.png"
+                  alt=""
+                  class="img-fluid"
+                />
+              </figure>
+              <h3>Onboard Institute</h3>
+              <p class="mb-0 text-size-18">
+                Get ready to onboard your educational institute.
+              </p>
+            </div>
+            <figure class="arrow1 mb-0" data-aos="fade-down">
+              <img
+                src="https://skoolzoom.com/assets/theme/skoolzoom/images/what-we-do-arrow-1.png"
+                class="img-fluid"
+                alt=""
+              />
+            </figure>
+            <div class="service service_2">
+              <figure class="img">
+                <img
+                  src="https://skoolzoom.com/assets/theme/skoolzoom/images/what-we-do-growth--icon.png"
+                  alt=""
+                  class="img-fluid"
+                />
+              </figure>
+              <h3>Business Growth</h3>
+              <p class="mb-0 text-size-18">
+                Manage it easily &amp; see growing your business.
+              </p>
+            </div>
+            <figure class="arrow2 mb-0" data-aos="fade-up">
+              <img
+                src="https://skoolzoom.com/assets/theme/skoolzoom/images/what-we-do-arrow-2.png"
+                class="img-fluid"
+                alt=""
+              />
+            </figure>
+            <div class="service service_3">
+              <figure class="img">
+                <img
+                  src="https://skoolzoom.com/assets/theme/skoolzoom/images/what-we-do-connected-people-icon.png"
+                  alt=""
+                  class="img-fluid"
+                />
+              </figure>
+              <h3>Scale UP</h3>
+              <p class="mb-0 text-size-18">
+                Need more tools and features, we are here to help you.
+              </p>
+            </div>
+            <figure class="element3 mb-0">
+              <img
+                src="https://skoolzoom.com/assets/theme/skoolzoom/images/what-we-do-element.png"
+                alt=""
+              />
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <section class="about-repay">
+        <div class="container">
+          <div class="content-wrapper">
+            <div class="image-wrapper">
+              <div class="about-wrapper">
+                <figure class="image mb-0">
+                  <img src="https://skoolzoom.com/assets/theme/skoolzoom/images/image-2.png" alt="" class="img-fluid">
+                </figure>
+              </div>
+            </div>
+            <div class="text-wrapper">
+              <div class="about-content" data-aos="fade-up">
+                <h6>ABOUT SKOOLZOOM</h6>
+                <h2>Start using SKOOLZOOM and get best ROI.</h2>
+                <p class="text-size-18">SKOOLZOOM brings a collection of online solutions to revolutionize the learning process and manage educational institutions of all sizes. We equip management, students, teachers and parents to tackle key challenges in the education sector.</p>
+                <p class="text-size-18 text">We make your spending stress-free for you to have the perfect control.</p>
+                <div class="right-lower">
+                  <div class="stat-item">
+                    <figure class="mb-0 icon">
+                      <img src="https://skoolzoom.com/assets/theme/skoolzoom/images/happy-customer-icon.png" alt="" class="img-fluid">
+                    </figure>
+                    <div class="content">
+                      <span class="count" data-target="100000">0</span>+
+                      <h4 class="mb-0">Enrolled Students</h4>
+                    </div>
+                  </div>
+                  <div class="stat-item">
+                    <figure class="mb-0 icon">
+                      <img src="https://skoolzoom.com/assets/theme/skoolzoom/images/total-customers-icon.png" alt="" class="img-fluid">
+                    </figure>
+                    <div class="content">
+                      <span class="count" data-target="5000">0</span>+
+                      <h4 class="mb-0">Staff &amp; Faculty</h4>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
 
     <!--=============== MAIN JS ===============-->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
     <script src="../js/main.js"></script>
+    <script src="../js/carousel.js"></script>
+    <script src="../js/animation.js"></script>
   </body>
 </html>

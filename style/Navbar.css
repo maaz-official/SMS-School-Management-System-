@@ -93,6 +93,7 @@ a {
 }
 
 .nav__logo {
+  filter: drop-shadow(1px 1px 20px yellow);
   display: inline-flex;
   align-items: center;
   column-gap: .25rem;
@@ -419,6 +420,29 @@ a {
   background-color: transparent;
 }
 
-.main_content{
-  margin-top: 100px;
+/* Responsive Login Button */
+@media (max-width: 768px) {
+  .glow-on-hover {
+    margin-left: 236px;
+    width: 180px;
+    height: 45px;
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .glow-on-hover {
+    width: 150px;
+    height: 40px;
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 320px) {
+  .glow-on-hover {
+    margin-left: 236px;
+    width: 120px;
+    height: 35px;
+    font-size: 11px;
+  }
 }
