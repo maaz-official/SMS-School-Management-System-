@@ -1,0 +1,401 @@
+
+@import url('https://fonts.googleapis.com/css?family=Abel');
+@import url('https://fonts.googleapis.com/css?family=Hind:300,400&display=swap');
+
+
+/* General Styles */
+body,
+html {
+  margin: 0;
+  padding: 0;
+  font-family: "Arial", sans-serif;
+  box-sizing: border-box;
+  background: linear-gradient(135deg, #f0f8ff 0%, #e0ffff 100%);
+}
+#price {
+    text-align: center;
+    padding: 50px 0;
+  }
+
+  .plan {
+    display: inline-block;
+    margin: 10px 1%;
+    width: 45%;
+    min-width: 280px;
+    max-width: 350px;
+    font-family: 'Lato', Arial, sans-serif;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+  }
+
+  .plan:hover {
+    transform: scale(1.05);
+  }
+
+  .plan-inner {
+    background: #fff;
+    margin: 0 auto;
+    border-radius: 10px;
+  }
+
+  .entry-title {
+    background: #53cfe9;
+    height: 160px;
+    position: relative;
+    text-align: center;
+    color: #fff;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+
+  .entry-title > h3 {
+    background: #20bada;
+    margin-bottom: 30px;
+    font-size: 24px;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    font-weight: 700;
+    border-radius: 0 0 10px 10px;
+  }
+
+  .entry-title .price {
+    position: absolute;
+    bottom: -25px;
+    background: #20bada;
+    height: 100px;
+    width: 140px;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    overflow: hidden;
+    border-radius: 50px;
+    border: 5px solid #fff;
+    line-height: 70px;
+    font-size: 19px;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .sub {
+    position: absolute;
+    font-size: 3px;
+    bottom: 5px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-weight: 400;
+  }
+
+  .entry-content {
+    color: #323232;
+    padding: 20px;
+  }
+
+  .entry-content ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-align: left;
+  }
+
+  .entry-content li {
+    border-bottom: 1px solid #e5e5e5;
+    padding: 10px 0;
+  }
+
+  .entry-content li:last-child {
+    border: none;
+  }
+
+  .btn {
+    padding: 20px 0;
+    text-align: center;
+  }
+
+  .btn a {
+    background: #20bada;
+    padding: 10px 30px;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 700;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+  }
+
+  .btn a:hover {
+    background: #53cfe9;
+  }
+
+  .basic .entry-title {
+    background: #75ddd9;
+  }
+
+  .basic .entry-title > h3 {
+    background: #44cbc6;
+  }
+
+  .basic .price {
+    background: #44cbc6;
+  }
+
+  .standard .entry-title {
+    background: #4484c1;
+  }
+
+  .standard .entry-title > h3 {
+    background: #3772aa;
+  }
+
+  .standard .price {
+    background: #3772aa;
+  }
+
+  .hot {
+    position: absolute;
+    top: -7px;
+    background: #f80;
+    color: #fff;
+    text-transform: uppercase;
+    z-index: 2;
+    padding: 2px 5px;
+    font-size: 9px;
+    border-radius: 2px;
+    right: 10px;
+    font-weight: 700;
+  }
+  .pricing-features-summary {
+    margin-top: 2.5rem; /* Increased margin */
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+  }
+  
+  .pricing-features-summary p {
+    font-size: 1.2rem; /* Increased font size */
+    color: #004d40;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+  }
+  
+  .pricing-features-summary p i {
+    color: #ff9800;
+    margin-right: 0.75rem; /* Increased margin */
+  }
+
+/* NEED MORE INFO? */
+
+.card-container {
+    background-color: #f7b7231a;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0px;
+    gap: 40px;
+    padding: 40px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: #fff;
+    margin-top: 50px;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    height: 300px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    cursor: pointer;
+    background: linear-gradient(135deg, #f7b723, #ffffff);
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 25px rgba(0, 0, 0, 0.2);
+}
+
+.card-content {
+    position: relative;
+    z-index: 2;
+}
+
+.card h2 {
+    margin-top: 0;
+    font-size: 1.8rem;
+    color: #333;
+    margin-bottom: 10px;
+    transition: color 0.3s ease-in-out;
+}
+
+.card p {
+    margin-bottom: 30px;
+    color: #555;
+    transition: color 0.3s ease-in-out;
+}
+
+.card button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.card button:hover {
+    background-color: #0056b3;
+    transform: scale(1.1);
+}
+
+.card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.05);
+    z-index: 1;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.card:hover::before {
+    opacity: 0;
+}
+
+.content {
+    background-color: #f7b7231a;
+    width: 100%;
+    padding: 40px 20px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.content h6 {
+    font-size: 1.5rem;
+    color: #004d40;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    margin: 0;
+}
+
+.content h2 {
+    margin-top: 10px;
+    font-size: 3rem;
+    color: #005662;
+    margin-bottom: 1.5rem;
+}
+
+.content p {
+    font-size: 1.2rem;
+    color: #333;
+}
+
+/* FA????? */
+
+.container_1 {
+  width: 100%;
+  padding: 50px;
+  background-color: #f7b7231a;
+}
+
+.accordion .accordion-item {
+  border-bottom: 1px solid #e5e5e5;
+}
+.accordion .accordion-item button[aria-expanded='true'] {
+  border-bottom: 1px solid #03b5d2;
+}
+
+.accordion button {
+  position: relative;
+  display: block;
+  text-align: left;
+  width: 100%;
+  padding: 1em 0;
+  color: #7288a2;
+  font-size: 1.15rem;
+  font-weight: 400;
+  border: none;
+  background: none;
+  outline: none;
+}
+.accordion button:hover, .accordion button:focus {
+  cursor: pointer;
+  color: #03b5d2;
+}
+.accordion button:hover .icon, .accordion button:focus .icon {
+  color: #03b5d2;
+  border: 1px solid #03b5d2;
+}
+.accordion button .accordion-title {
+  padding: 1em 1.5em 1em 0;
+}
+.accordion button .icon {
+  display: inline-block;
+  position: absolute;
+  top: 18px;
+  right: 0;
+  width: 22px;
+  height: 22px;
+  border: 1px solid;
+  border-radius: 22px;
+}
+.accordion button .icon::before {
+  display: block;
+  position: absolute;
+  content: '';
+  top: 9px;
+  left: 5px;
+  width: 10px;
+  height: 2px;
+  background: currentColor;
+}
+.accordion button .icon::after {
+  display: block;
+  position: absolute;
+  content: '';
+  top: 5px;
+  left: 9px;
+  width: 2px;
+  height: 10px;
+  background: currentColor;
+}
+.accordion button[aria-expanded='true'] {
+  color: #03b5d2;
+}
+.accordion button[aria-expanded='true'] .icon::after {
+  width: 0;
+}
+.accordion button[aria-expanded='true'] + .accordion-content {
+  opacity: 1;
+  max-height: 9em;
+  transition: all 200ms linear;
+  will-change: opacity, max-height;
+}
+.accordion .accordion-content {
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: opacity 200ms linear, max-height 200ms linear;
+  will-change: opacity, max-height;
+}
+.accordion .accordion-content p {
+  font-size: 1rem;
+  font-weight: 300;
+  margin: 2em 0;
+}

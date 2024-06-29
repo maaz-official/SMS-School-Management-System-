@@ -1,0 +1,117 @@
+.contact-container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 30px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contact-container:hover {
+    transform: scale(1.02);
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+}
+
+.contact-container h1 {
+    margin-bottom: 10px;
+    color: #333;
+    font-size: 2.5em;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.contact-container p {
+    margin-bottom: 20px;
+    color: #666;
+    font-size: 1.2em;
+}
+
+.contact-form {
+    text-align: left;
+}
+
+.contact-form label {
+    display: block;
+    margin: 10px 0 5px;
+    color: #333;
+    font-size: 1.1em;
+    font-weight: bold;
+}
+
+.contact-form input, .contact-form textarea {
+    width: calc(100% - 20px);
+    padding: 15px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+    transition: border 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contact-form input:focus, .contact-form textarea:focus {
+    border-color: #87cefa;
+    outline: none;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+.contact-form button {
+    display: inline-block;
+    padding: 15px 30px;
+    border: none;
+    background: linear-gradient(135deg, #333, #555);
+    color: #fff;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 1.2em;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contact-form button:hover {
+    background: linear-gradient(135deg, #555, #777);
+    transform: scale(1.05);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.map-container {
+    margin-top: 30px;
+    text-align: center;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.map-container iframe {
+    width: 100%;
+    height: 400px;
+    border: 0;
+}
+
+@media (max-width: 768px) {
+    .contact-container {
+        padding: 20px;
+    }
+
+    .contact-container h1 {
+        font-size: 2em;
+    }
+
+    .contact-container p {
+        font-size: 1em;
+    }
+
+    .contact-form input, .contact-form textarea {
+        padding: 10px;
+    }
+
+    .contact-form button {
+        padding: 10px 20px;
+        font-size: 1em;
+    }
+
+    .map-container iframe {
+        height: 300px;
+    }
+}

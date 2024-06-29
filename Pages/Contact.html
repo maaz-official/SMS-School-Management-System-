@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link rel="stylesheet" href="../style/Navbar.css" />
+    <link rel="stylesheet" href="../style/Footer.css" />
+    <link rel="stylesheet" href="../style/Contact.css" />
+    <link rel="stylesheet" href="../style/Feature.css" />
+    <title>Home</title>
+  </head>
+  <body>
+    <header class="header">
+      <nav class="nav container">
+        <div class="nav__data">
+          <a href="#" class="nav__logo">
+            <i class="ri-planet-line"></i> Company
+          </a>
+          <div class="nav__toggle" id="nav-toggle">
+            <i class="ri-menu-line nav__burger"></i>
+            <i class="ri-close-line nav__close"></i>
+          </div>
+        </div>
+        <div class="nav__menu" id="nav-menu">
+          <ul class="nav__list">
+            <li><a href="./Home.html" class="nav__link">Home</a></li>
+            <li><a href="./Features.html" class="nav__link">Features</a></li>
+            <li><a href="./Pricing.html" class="nav__link">Pricing</a></li>
+            <li class="dropdown__item">
+              <div class="nav__link">
+                Partners <i class="ri-arrow-down-s-line dropdown__arrow"></i>
+              </div>
+              <ul class="dropdown__menu">
+                <li>
+                  <a href="./channel-partner.html" class="dropdown__link"
+                    ><i class="ri-pie-chart-line"></i> Become a Channel
+                    Partner</a
+                  >
+                </li>
+                <li>
+                  <a href="./channel-ref.html" class="dropdown__link"
+                    ><i class="ri-pie-chart-line"></i> Become a Referral
+                    Partner</a>
+                </li>
+              </ul>
+            </li>
+            <li><a href="./Blog.html" class="nav__link">Blogs</a></li>
+            <li><a href="./Contact.html" class="nav__link">Contact</a></li>
+            <button class="glow-on-hover" type="button">Account Login</button>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main class="main_content">
+      <!-- Sub-Banner -->
+      <div class="sub-banner">
+        <section class="banner-section">
+          <figure class="mb-0 bgshape">
+            <img
+              src="https://skoolzoom.com/assets/theme/skoolzoom/images/homebanner-bgshape.png"
+              alt=""
+              class="img-fluid"
+            />
+          </figure>
+          <div class="container">
+            <div class="row">
+              <div class="col-12">
+                <div class="banner_content">
+                  <h1>Contact Us</h1>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Aperiam, sint iusto. Illum, officia maxime. Dolores
+                    quibusdam officiis eveniet dolor. Nam.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <div class="box-container">
+          <div class="hr-line"><hr /></div>
+          <div class="box">
+            <span class="mb-0 text-size-16 home-1">Home</span
+            ><span class="mb-0 text-size-16 dash">-</span
+            ><strong
+              ><span class="mb-0 text-size-16 box_span">Contact</span></strong
+            >
+          </div>
+          <div class="hr-line"><hr /></div>
+        </div>
+      </div>
+
+      <div class="contact-container">
+        <h1>LET'S CONTACT US</h1>
+        <p>Office#2, 3<sup>rd</sup> Floor, 352-A, Main PWD Road, Islamabad</p>
+        <div class="contact-form">
+          <form action="submit_form.php" method="post">
+            <label for="name">Name:</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Enter Your Name"
+              required
+            />
+
+            <label for="email">Email:</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Enter Your Email Address"
+              required
+            />
+
+            <label for="phone">Phone:</label>
+            <input
+              type="tel"
+              id="phone"
+              name="phone"
+              placeholder="Enter Your Phone Number"
+              required
+            />
+
+            <label for="message">Message:</label>
+            <textarea
+              id="message"
+              name="message"
+              placeholder="Add Your Comment"
+              required
+            ></textarea>
+
+            <button type="submit">Submit</button>
+          </form>
+        </div>
+        <div class="map-container">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3877.721659038491!2d73.08025571466507!3d33.64040468072011!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38df951b5a6f874d%3A0x7287e6c598593ccb!2sOffice%20No.%202%2C%203rd%20Floor%2C%20352-A%2C%20Main%20PWD%20Road%2C%20Islamabad%2C%20Islamabad%20Capital%20Territory!5e0!3m2!1sen!2s!4v1654745737641!5m2!1sen!2s"
+            width="600"
+            height="450"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+          ></iframe>
+        </div>
+      </div>
+
+      <!-- Footer Section -->
+      <section class="footer-section">
+        <div class="container">
+          <div class="middle-portion">
+            <div class="row">
+              <div class="col-lg-4 col-md-5 col-sm-6 col-12">
+                <a href="https://skoolzoom.com/home/">
+                  <figure class="footer-logo">
+                    <img
+                      src="https://skoolzoom.com/assets/theme/skoolzoom/images/footer-logo.png"
+                      class="img-fluid"
+                      alt="Footer Logo"
+                    />
+                  </figure>
+                </a>
+                <p class="text-size-16 footer-text">
+                  Redefining Education with Cloud-Based Learning & Management
+                  Solutions.
+                </p>
+                <figure class="mb-0 payment-icon">
+                  <img
+                    src="https://skoolzoom.com/assets/theme/skoolzoom/images/payment-card.png"
+                    class="img-fluid"
+                    alt="Payment Methods"
+                  />
+                </figure>
+              </div>
+              <div
+                class="col-lg-1 col-md-1 col-sm-12 col-12 d-lg-block d-none"
+              ></div>
+              <div class="col-lg-2 col-md-3 col-sm-12 col-12 d-md-block d-none">
+                <div class="links">
+                  <h4 class="heading">Important Links</h4>
+                  <hr class="line" />
+                  <ul class="list-unstyled mb-0">
+                    <li>
+                      <a
+                        href="https://skoolzoom.com/"
+                        class="text-size-16 text text-decoration-none"
+                        >Home</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="https://skoolzoom.com/pricing"
+                        class="text-size-16 text text-decoration-none"
+                        >Pricing Plan</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="https://skoolzoom.com/channel-partner"
+                        class="text-size-16 text text-decoration-none"
+                        >Channel Partnership</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="https://skoolzoom.com/referral-partner"
+                        class="text-size-16 text text-decoration-none"
+                        >Referral Partnership</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-lg-2 col-md-2 col-sm-12 col-12 d-lg-block d-none">
+                <div class="links">
+                  <h4 class="heading">Support</h4>
+                  <hr class="line" />
+                  <ul class="list-unstyled mb-0">
+                    <li>
+                      <a
+                        href="https://skoolzoom.com/contact"
+                        class="text-size-16 text text-decoration-none"
+                        >Support</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="https://mozzine.com/terms-of-use"
+                        class="text-size-16 text text-decoration-none"
+                        >Terms of Use</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="https://mozzine.com/privacy-policy"
+                        class="text-size-16 text text-decoration-none"
+                        >Privacy Policy</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="https://mozzine.com/refund-policy"
+                        class="text-size-16 text text-decoration-none"
+                        >Refund Policy</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-4 col-sm-6 col-12 d-sm-block">
+                <div class="icon">
+                  <h4 class="heading">Get in Touch</h4>
+                  <hr class="line" />
+                  <ul class="list-unstyled mb-0">
+                    <li class="text-size-16 text">
+                      Email:
+                      <a
+                        href="mailto:info@skoolzoom.com"
+                        class="mb-0 text text-decoration-none text-size-16"
+                        >info@skoolzoom.com</a
+                      >
+                    </li>
+                    <li class="text-size-16 text">
+                      Phone:
+                      <a
+                        href="tel:+923011016102"
+                        class="mb-0 text text-decoration-none text-size-16"
+                        >+92 301 1016102</a
+                      >
+                    </li>
+                    <li class="text-size-16 text">
+                      Whatsapp:
+                      <a
+                        href="https://wa.me/+923011016100?text=Hello,%20I%20want%20to%20know%20more%20about%20SKOOLZOOM"
+                        class="mb-0 text text-decoration-none text-size-16"
+                        >+92 301 1016102</a
+                      >
+                    </li>
+                    <li class="text-size-16 text1">
+                      Whatsapp:
+                      <a
+                        href="https://wa.me/+4475643186001?text=Hello,%20I%20want%20to%20know%20more%20about%20SKOOLZOOM"
+                        class="mb-0 text text-decoration-none text-size-16"
+                        >+44 7564 3186001</a
+                      >
+                    </li>
+                    <li class="social-icons">
+                      <div class="circle">
+                        <a href="https://www.facebook.com/MozzineNetwork/"
+                          ><i class="fa-brands fa-facebook-f"></i
+                        ></a>
+                      </div>
+                      <div class="circle">
+                        <a href="https://twitter.com/mozzinenetwork"
+                          ><i class="fa-brands fa-twitter"></i
+                        ></a>
+                      </div>
+                      <div class="circle">
+                        <a
+                          href="https://www.linkedin.com/company/mozzinenetwork/"
+                          ><i class="fa-brands fa-linkedin"></i
+                        ></a>
+                      </div>
+                      <div class="circle">
+                        <a href="https://www.instagram.com/mozzinenetwork/"
+                          ><i class="fa-brands fa-instagram"></i
+                        ></a>
+                      </div>
+                      <div class="circle">
+                        <a
+                          href="https://www.youtube.com/channel/UCmXGOeEzZ36L1GYl8vgTs5g"
+                          ><i class="fa-brands fa-youtube"></i
+                        ></a>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Footer Area -->
+      <section class="copyright">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <p class="text-size-16">
+                Copyright @2023 SKOOLZOOM. All Rights Reserved
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!--=============== MAIN JS ===============-->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js"></script>
+    <script>
+      AOS.init({
+        duration: 0,
+        once: true,
+      });
+    </script>
+    <script src="../js/main.js"></script>
+    <script src="../js/carousel.js"></script>
+    <script src="../js/animation.js"></script>
+  </body>
+</html>
