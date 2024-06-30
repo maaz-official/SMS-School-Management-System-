@@ -1,3 +1,14 @@
+
+![image](https://github.com/maaz-official/SMS-School-Management-System-/assets/161757387/90928891-7054-4393-a5da-7b93b52fcaf7)
+
+![image](https://github.com/maaz-official/SMS-School-Management-System-/assets/161757387/ef5d2ec8-7db5-4072-a6a1-01f4b871a82d)
+
+![image](https://github.com/maaz-official/SMS-School-Management-System-/assets/161757387/e0e0d89b-268b-420a-9527-21e4ecdcdbd8)
+
+
+![image](https://github.com/maaz-official/SMS-School-Management-System-/assets/161757387/58292c46-4865-423c-a128-187d3ad0c7bf)
+
+
 ```markdown
 # School Management System
 
